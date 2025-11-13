@@ -7,8 +7,8 @@ jobs:
       - run: sudo apt-get install texlive-xetex inkscape pandoc
       - uses: actions/checkout@v4
       - run: pip install pint open-atmos-jupyter-utils scipy nbconvert ipykernel
-      - run: python -m nbconvert --to pdf --execute lab1.ipynb checkout --output sprawozdanie.pdf
+      - run: python -m nbconvert --to pdf --execute lab2.ipynb checkout --output sprawozdanie2.pdf
       - uses: actions/upload-artifact@v4
         with:
-          path: sprawozdanie.pdf
+          path: sprawozdanie2.pdf
 
